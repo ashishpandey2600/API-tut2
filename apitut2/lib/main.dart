@@ -1,3 +1,4 @@
+import 'package:apitut2/alldata.dart';
 import 'package:flutter/material.dart';
 
 import 'homepage.dart';
@@ -18,7 +19,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomePage(),
+      home: AllData(),
     );
   }
 }
