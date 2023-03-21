@@ -39,7 +39,8 @@ class _AllDataState extends State<AllData> {
         appBar: AppBar(title: Text("API Demo")),
         body: ListView.builder(
           itemBuilder: (context, index) {
-            return Container(
+            return Card(
+              
               child: Column(children: [
                 Image.network(listResponse[index]["avatar"]),
                 Text(listResponse[index]["id"].toString()),
@@ -47,6 +48,7 @@ class _AllDataState extends State<AllData> {
                 Text(listResponse[index]["first_name"].toString()),
                 Text(listResponse[index]["last_name"].toString()),
               ]),
+              color: Color.fromARGB(255, 108, 182, 222),
             );
           },
           itemCount: listResponse == null ? 0 : listResponse.length,
